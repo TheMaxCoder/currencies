@@ -224,6 +224,8 @@ enum class Currency(
         return ContextCompat.getDrawable(context, this.flag ?: R.drawable.flag_unknown)!!
     }
 
+    val flagId = this.flag ?: R.drawable.flag_unknown
+
     /**
      * https://en.wikipedia.org/wiki/Currency_symbol
      * e.g. $ for USD
